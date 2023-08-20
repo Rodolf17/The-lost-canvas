@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/assets/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+          
+}
+
+.tamanho-maximo-container{
+    max-width: 2024px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1024;
+}
+
+
+.container-topo{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.container-topo .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.lista-links{
+    display: flex;
+    list-style: none;
+}
+
+
+.lista-links li a{
+    margin: 0 auto;
+    color: rgb(133, 121, 202);
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 20px;
+    text-decoration:none;
+}
+
+
+.secao-titulo{
+    background-image: url('/assets/Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.secao-titulo:hover{
+    opacity: 1;
+}
+
+.titulo{
+    color: black;
+    text-align: center;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.356);
+    font-style: italic;
+    font-size: 28px;
+    padding-bottom: 0;
+}
+
+
+section#saints{
+    background-image: url('/assets/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.container-cards{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 20px;
+
+   animation:fadeInDown;
+   animation-duration: 3.5s; 
+                     
+}
+
+.cards{
+    border: 1px solid black;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.cards img{
+    mix-blend-mode: luminosity;
+    width: 397px;
+    height: 500px;
+    transition: transform 0.3 ease;
+}
+
+.cards img:hover{
+    mix-blend-mode: lighten;
+    transform: scale(1.1);
+    
+}
+
+
+.cards-informacao{
+    height: 100%;
+    padding: 10px;
+    background-image: linear-gradient(rgb(231, 231, 0), rgba(255, 0, 0, 0.5) );
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.estilizando-h2{
+    color: white;
+    font-weight: bold;
+}
+
+.cards-informacao h3{
+    background-color: black;
+    color: white;
+    width: 350px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 auto;    
+}
+
+.cards-informacao h4{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards-informacao ul{
+    list-style-type:none;
+}
+
+.cards-informacao ul li{
+    text-align: left;
+    margin: 5px auto;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+
+footer{
+    background-color: black;
+    border: 1px solid black;
+}
+
+.rodape-informacao{
+    text-align: center;
+    
+}
+
+div .rodape-informacao{
+    width: 100%;
+}
+
+.rodape-informacao p{
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+}
+
+a:hover{
+    opacity:.6 ;
+}
