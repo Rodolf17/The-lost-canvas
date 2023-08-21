@@ -1,4 +1,6 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -55,34 +57,40 @@ body{
 }
 
 
-.secao-titulo{
+.banner-topo{
     background-image: url('/assets/Banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 100vw;
+    background-position: center top;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.5;
 }
 
-.secao-titulo:hover{
-    opacity: 1;
-}
-
-.titulo{
+.container-titulo{
+    max-width: 1024px;
+    margin: 0;
     color: black;
     text-align: center;
     width: 600px;
     border: 1px solid black;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.356);
-    font-style: italic;
-    font-size: 28px;
-    padding-bottom: 0;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.356);
+    padding: 50px 30px;
 }
+
+.container-titulo h1{
+    font-style: italic;
+    font-size: 50px;
+}
+
+.container-titulo h2{
+    font-size: 30px;
+}
+
+
 
 
 section#saints{
@@ -96,19 +104,23 @@ section#saints{
    justify-content: space-evenly;
    align-items: center;
    flex-wrap: wrap;
-   margin-top: 20px;
-
+   margin-top: 20px; 
    animation:fadeInDown;
    animation-duration: 3.5s; 
                      
 }
 
 .cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     border: 1px solid black;
     max-width: 400px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
+figure{overflow: hidden;}
 
 .cards img{
     mix-blend-mode: luminosity;
